@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  /* Primary Spectrum */
+  --color-brand-primary-deep: #400A15;
+  --color-brand-primary-base: #5C1322;
+  --color-brand-primary-subtle: #8B263E;
+
+  /* Secondary Spectrum (Gold/Brass) */
+  --color-brand-gold-light: #E5C378;
+  --color-brand-gold-base: #C59A4E;
+  --color-brand-gold-deep: #8E6E32;
+
+  /* Surfaces */
+  --color-surface-canvas: #FAF7F2;
+  --color-surface-elevated: #FFFFFF;
+  --color-surface-parchment: #F5EFEB;
+  --color-surface-container: #F0EAE1;
+  --color-surface-dark: #2A1115; /* Added for dark sections based on visual */
+
+  /* Text */
+  --color-text-primary: #221C1B;
+  --color-text-secondary: #635856;
+  --color-text-gold: #8E6E32;
+
+  /* Provided standard tokens mapped as fallback/alternatives */
+  --color-primary: #3e000f;
+  --color-primary-container: #5c1322;
+  --color-on-primary-container: #de7985;
+  
+  --color-secondary: #7b5810;
+  --color-secondary-container: #fdcd7b;
+  
+  --color-surface: #fff8f6;
+  --color-surface-dim: #e4d7d5;
+}
+
+@layer base {
+  body {
+    @apply bg-surface-canvas text-text-primary font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-text-primary;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+}

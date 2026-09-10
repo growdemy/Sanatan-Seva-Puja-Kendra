@@ -1,0 +1,140 @@
+import { ChevronDown } from 'lucide-react';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+
+export default function CombinedSections() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const stats = [
+    { num: "15K+", label: "Happy Families" },
+    { num: "20K+", label: "Pujas Completed" },
+    { num: "30+", label: "Experienced Pandits" },
+    { num: "20+", label: "Years of Experience" }
+  ];
+
+  const faqs = [
+    {
+      q: "Does Pandit Shridhar Shastri Ji provide complete Puja Samagri?",
+      a: "Yes, all samagri used in the puja is 100% pure, organic, and traditionally prescribed. You do not need to arrange anything unless specifically requested for personal items."
+    },
+    {
+      q: "How is the auspicious Shubh Muhurat determined?",
+      a: "Pandit Ji calculates the exact planetary alignments based on your family's Gotra, birth charts (if applicable), and current Panchang to find the most auspicious window for your ceremony."
+    },
+    {
+      q: "Can ceremonies be conducted for devotees residing outside India?",
+      a: "Yes. We offer Global E-Puja services where the complete vidhi is broadcast live from Kashi, and the sankalpa is taken in your name and Gotra. Consecrated prasad is then shipped internationally."
+    },
+    {
+      q: "How far in advance should we schedule our ceremony?",
+      a: "We recommend booking at least 1-2 weeks in advance to secure the most auspicious muhurat and allow adequate time for genuine samagri preparation, especially during major festival seasons."
+    }
+  ];
+
+  return (
+    <>
+      {/* Stats Strip */}
+      <section className="bg-[#2A1115] py-16 border-y border-brand-gold-base/20 relative overflow-hidden">
+        {/* Faint mandala background */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, #C59A4E 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
+        
+        <div className="max-w-[1600px] mx-auto px-6 md:px-10 lg:px-20 relative z-10">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center divide-x-0 lg:divide-x divide-brand-gold-base/10">
+            {stats.map((stat, i) => (
+              <div key={i} className="flex flex-col items-center justify-center">
+                <p className="text-4xl md:text-5xl font-display font-semibold text-brand-gold-light mb-2">{stat.num}</p>
+                <p className="text-sm font-semibold uppercase tracking-widest text-surface-canvas/80">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-surface-canvas py-20 lg:py-28">
+        <div className="max-w-3xl mx-auto px-6 md:px-10">
+          
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-widest text-brand-gold-deep mb-4">
+              FREQUENTLY ANSWERED
+            </div>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+              Vedic Inquiries & Booking Clarifications
+            </h2>
+            <p className="text-text-secondary">
+              Everything you need to know about Samagri arrangements, Shubh Muhurat, and home visits.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div 
+                key={i} 
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                className="bg-white border border-brand-gold-base/20 rounded-lg overflow-hidden cursor-pointer hover:border-brand-gold-base/50 transition-colors shadow-sm"
+              >
+                <div className="p-5 flex items-center justify-between">
+                  <h3 className="font-semibold text-text-primary text-sm pr-8">{faq.q}</h3>
+                  <motion.div
+                    animate={{ rotate: openFaq === i ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <ChevronDown className="w-5 h-5 text-brand-gold-deep shrink-0" />
+                  </motion.div>
+                </div>
+                <AnimatePresence>
+                  {openFaq === i && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <div className="px-5 pb-5 pt-0 text-sm text-text-secondary leading-relaxed border-t border-brand-gold-base/10 mt-2">
+                        {faq.a}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+          </div>
+          
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-[#2A1115] py-24 relative overflow-hidden text-center">
+        <div className="max-w-4xl mx-auto px-6 md:px-10 relative z-10">
+          
+          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-brand-gold-base mb-6 border border-brand-gold-base/30 px-4 py-1.5 rounded-full bg-[#400A15]">
+            <span className="text-sm">ॐ</span>
+            SANATAN SEVA PUJA KENDRA
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-surface-canvas mb-6 leading-tight">
+            Ready to Bless Your Home with Vedic Auspiciousness?
+          </h2>
+          
+          <p className="text-lg text-surface-canvas/70 mb-10 max-w-2xl mx-auto">
+            Speak directly with Pandit Shridhar Shastri Ji today. Share your family Gotra and occasion for complimentary Muhurat calculation.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+            <button className="w-full sm:w-auto bg-brand-gold-deep hover:bg-brand-gold-base text-surface-canvas px-8 py-4 rounded font-semibold transition-colors flex items-center justify-center gap-2">
+              <span className="text-lg">📅</span> BOOK PUJA ONLINE
+            </button>
+            <button className="w-full sm:w-auto bg-white hover:bg-surface-parchment text-[#2A1115] px-8 py-4 rounded font-semibold transition-colors flex items-center justify-center gap-2">
+              <span className="text-green-600 text-lg">💬</span> WHATSAPP PANDIT JI
+            </button>
+          </div>
+          
+          <p className="text-xs text-surface-canvas/50">
+            Direct Helpdesk: <span className="text-brand-gold-base">+91 98234 56789</span> • 8:00 AM - 8:00 PM IST
+          </p>
+
+        </div>
+      </section>
+    </>
+  );
+}
