@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/your-repository-name/',
+    base: '/Sanatan-Seva-Puja-Kendra/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
