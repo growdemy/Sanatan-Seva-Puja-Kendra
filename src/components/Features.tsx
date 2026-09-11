@@ -61,11 +61,11 @@ export default function Features() {
                 key={index} 
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className="relative cursor-pointer group rounded-[32px] h-full flex flex-col overflow-hidden"
+                className="relative cursor-pointer group rounded-[12px] h-full flex flex-col overflow-hidden"
               >
                 {/* Top linear gradient animation line on hover */}
                 <motion.div
-                  className="absolute top-0 left-0 right-0 h-[3px] rounded-t-[32px] z-20 pointer-events-none"
+                  className="absolute top-0 left-0 right-0 h-[3px] rounded-t-[12px] z-20 pointer-events-none"
                   initial={{ scaleX: 0, originX: 0 }}
                   animate={{ scaleX: isHovered ? 1 : 0 }}
                   transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
@@ -74,9 +74,9 @@ export default function Features() {
                   }}
                 />
 
-                <div className={`relative z-10 bg-white p-8 rounded-[30px] text-left transition-all duration-300 flex flex-col justify-between flex-1 border border-transparent ${isHovered ? 'shadow-[0_20px_50px_-10px_rgba(217,107,38,0.25)]' : 'shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)]'}`}>
+                <div className={`relative z-10 bg-white p-8 rounded-[12px] text-left transition-all duration-300 flex flex-col justify-between flex-1 border border-transparent ${isHovered ? 'shadow-[0_20px_50px_-10px_rgba(217,107,38,0.25)]' : 'shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)]'}`}>
                   <div>
-                    <div className={`w-[60px] h-[60px] shrink-0 rounded-[20px] flex items-center justify-center transition-transform duration-300 group-hover:scale-110 mb-6 ${feature.bg}`}>
+                    <div className={`w-[60px] h-[60px] shrink-0 rounded-[12px] flex items-center justify-center transition-transform duration-300 group-hover:scale-110 mb-6 ${feature.bg}`}>
                       {feature.icon}
                     </div>
                     <h3 className="text-lg font-display font-bold text-brand-primary-deep mb-2.5">
