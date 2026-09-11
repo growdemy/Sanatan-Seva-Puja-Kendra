@@ -157,7 +157,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="relative w-full max-w-md mx-auto lg:ml-auto lg:mr-8"
         >
-          <div className="bg-gradient-to-b from-[#4A1623] to-[#2E0B12] text-white rounded-[16px] p-8 md:p-10 shadow-[0_24px_60px_-15px_rgba(64,10,21,0.5)] relative z-10 border border-brand-gold-base/10">
+          <div className="bg-gradient-to-b from-[#4A1623] to-[#2E0B12] text-white rounded-[16px] p-[20px] md:p-[40px] shadow-[0_24px_60px_-15px_rgba(64,10,21,0.5)] relative z-10 border border-brand-gold-base/10">
             <div className="text-center mb-8">
               <span className="inline-block mb-3">
                 <svg className="w-[28px] h-[30px] md:w-[40px] md:h-[42px]" viewBox="0 0 115.35 122.88" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,19 +178,19 @@ export default function Hero() {
             <form className="space-y-4">
               <div>
                 <label className="block text-[10px] font-semibold uppercase tracking-widest text-[#E8C37D] mb-2">Your Name</label>
-                <input type="text" placeholder="Enter your full name" className="w-full bg-[#632935]/40 border border-[#7A3E4C]/50 rounded-xl px-4 py-3.5 text-sm text-surface-canvas placeholder:text-surface-canvas/40 focus:outline-none focus:border-brand-gold-base transition-colors" />
+                <input type="text" placeholder="Enter your full name" className="w-full bg-[#632935]/40 border border-[#7A3E4C]/50 rounded-xl px-4 py-[12px] text-sm text-surface-canvas placeholder:text-surface-canvas/40 focus:outline-none focus:border-brand-gold-base transition-colors" />
               </div>
               <div>
                 <label className="block text-[10px] font-semibold uppercase tracking-widest text-[#E8C37D] mb-2">Phone Number</label>
                 <div className="flex">
-                  <span className="bg-[#632935]/60 border border-r-0 border-[#7A3E4C]/50 rounded-l-xl px-4 py-3.5 text-sm text-surface-canvas/70 font-sans">+91</span>
-                  <input type="tel" placeholder="98765 43210" className="w-full bg-[#632935]/40 border border-[#7A3E4C]/50 rounded-r-xl px-4 py-3.5 text-sm text-surface-canvas placeholder:text-surface-canvas/40 focus:outline-none focus:border-brand-gold-base transition-colors" />
+                  <span className="bg-[#632935]/60 border border-r-0 border-[#7A3E4C]/50 rounded-l-xl px-4 py-[12px] text-sm text-surface-canvas/70 font-sans">+91</span>
+                  <input type="tel" placeholder="98765 43210" className="w-full bg-[#632935]/40 border border-[#7A3E4C]/50 rounded-r-xl px-4 py-[12px] text-sm text-surface-canvas placeholder:text-surface-canvas/40 focus:outline-none focus:border-brand-gold-base transition-colors" />
                 </div>
               </div>
               <div>
                 <label className="block text-[10px] font-semibold uppercase tracking-widest text-[#E8C37D] mb-2">Type of Puja</label>
                 <div className="relative">
-                  <select defaultValue="" className="w-full bg-[#632935]/40 border border-[#7A3E4C]/50 rounded-xl px-4 py-3.5 pr-10 text-sm text-surface-canvas appearance-none focus:outline-none focus:border-brand-gold-base transition-colors">
+                  <select defaultValue="" className="w-full bg-[#632935]/40 border border-[#7A3E4C]/50 rounded-xl px-4 py-[12px] pr-10 text-sm text-surface-canvas appearance-none focus:outline-none focus:border-brand-gold-base transition-colors">
                     <option value="" disabled className="bg-[#46111D] text-white">Select puja type</option>
                     <option value="griha-pravesh" className="bg-[#46111D] text-white">Griha Pravesh</option>
                     <option value="rudrabhishek" className="bg-[#46111D] text-white">Maha Rudrabhishek</option>
@@ -203,7 +203,7 @@ export default function Hero() {
               <div>
                 <label className="block text-[10px] font-semibold uppercase tracking-widest text-[#E8C37D] mb-2">Select City</label>
                 <div className="relative">
-                  <select defaultValue="" className="w-full bg-[#632935]/40 border border-[#7A3E4C]/50 rounded-xl px-4 py-3.5 pr-10 text-sm text-surface-canvas appearance-none focus:outline-none focus:border-brand-gold-base transition-colors mb-2">
+                  <select defaultValue="" className="w-full bg-[#632935]/40 border border-[#7A3E4C]/50 rounded-xl px-4 py-[12px] pr-10 text-sm text-surface-canvas appearance-none focus:outline-none focus:border-brand-gold-base transition-colors mb-2">
                     <option value="" disabled className="bg-[#46111D] text-white">Select your city</option>
                     <option value="hyderabad" className="bg-[#46111D] text-white">Hyderabad</option>
                     <option value="bengaluru" className="bg-[#46111D] text-white">Bengaluru</option>
@@ -214,7 +214,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <button type="button" className="w-full bg-gradient-to-r from-[#E5C378] via-[#F2D696] to-[#E5C378] hover:from-[#D1AC5D] hover:via-[#E8C37D] hover:to-[#D1AC5D] text-[#3B0918] font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 mt-4 text-[15px] shadow-[0_4px_14px_rgba(229,195,120,0.3)] hover:shadow-[0_6px_20px_rgba(229,195,120,0.4)]">
+              <button type="button" className="w-full bg-gradient-to-r from-[#E5C378] via-[#F2D696] to-[#E5C378] hover:from-[#D1AC5D] hover:via-[#E8C37D] hover:to-[#D1AC5D] text-[#3B0918] font-bold py-[12px] rounded-xl flex items-center justify-center gap-2 transition-all duration-300 mt-4 text-[15px] shadow-[0_4px_14px_rgba(229,195,120,0.3)] hover:shadow-[0_6px_20px_rgba(229,195,120,0.4)]">
                 <span className="text-lg drop-shadow-sm">🙏</span> Get Free Consultation
               </button>
             </form>
