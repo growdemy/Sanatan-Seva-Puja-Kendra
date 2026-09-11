@@ -43,7 +43,7 @@ export default function Testimonials() {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-text-primary mb-4 font-bold">
           1000+ Families Blessed
         </h2>
-        <p className="text-text-secondary max-w-2xl mx-auto">
+        <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary max-w-2xl mx-auto">
           Read reflections from patrons who entrusted their sacred family milestones to Sanatan Seva Puja Kendra.
         </p>
       </div>
@@ -75,7 +75,7 @@ export default function Testimonials() {
                     <Star key={j} className="w-4 h-4 fill-brand-gold-base text-brand-gold-base" />
                   ))}
                 </div>
-                <p className="text-[15px] text-text-secondary leading-relaxed mb-8 italic">
+                <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary mb-8 italic">
                   "{rev.text}"
                 </p>
               </div>

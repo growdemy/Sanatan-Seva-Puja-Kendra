@@ -59,7 +59,7 @@ export default function Pujas() {
             <h2 className="text-[32px] md:text-[40px] lg:text-[44px] font-display font-bold text-[#F9F6F6] mb-3">
               Popular Pujas & Anushthans
             </h2>
-            <p className="text-[15px] text-[#C2B5B7] max-w-2xl">
+            <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-[#C2B5B7] max-w-2xl">
               Filtered by occasion, each performed according to classical Shastra vidhi.
             </p>
           </div>
@@ -113,7 +113,7 @@ export default function Pujas() {
                 </div>
                 <div className="px-2 flex flex-col flex-grow">
                   <h3 className="text-[22px] font-display font-medium text-white mb-3 leading-snug">{puja.title}</h3>
-                  <p className="text-[14px] text-[#C4B2B4] leading-[1.6] mb-8 flex-grow">{puja.description}</p>
+                  <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-[#C4B2B4] mb-8 flex-grow">{puja.description}</p>
                   <button className="w-full bg-[#F4D091] hover:bg-[#EAE4E4] hover:bg-gradient-to-r hover:from-[#F0C988] hover:to-[#F4D091] text-[#340F16] font-bold py-3.5 rounded-full flex items-center justify-center gap-2 text-[13px] uppercase tracking-wider transition-all duration-300 shadow-[0_4px_14px_rgba(244,208,145,0.2)] hover:shadow-[0_6px_20px_rgba(244,208,145,0.3)] hover:-translate-y-0.5">
                     BOOK NOW <ArrowRight className="w-4 h-4" />
                   </button>

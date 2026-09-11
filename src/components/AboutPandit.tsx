@@ -60,7 +60,7 @@ export default function AboutPandit() {
             A Quarter Century of Vedic Scholarship & <span className="text-[#8B7330] italic font-bold">Pure Devotion</span>
           </h2>
           
-          <div className="space-y-6 text-[#5C4D50] text-[17px] leading-[1.7] mb-12">
+          <div className="space-y-6 text-[#5C4D50] text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] mb-12">
             <p>
               At <strong className="text-[#3D1A22] font-semibold">Sanatan Seva Puja Kendra</strong>, Pandit Shridhar Shastri Ji brings over 27 years of deep meditative tapasya and Shastra mastery. Born into an ancestral lineage of Kashi priests, he ensures every Sanskrit mantra is enunciated with pristine cadence (Vedic Swara), infusing each ritual with palpable spiritual vibrations.
             </p>
@@ -73,17 +73,17 @@ export default function AboutPandit() {
             <div className="border border-[#EBDDD5] rounded-[24px] p-6 bg-white/40 hover:bg-white transition-colors duration-300">
               <Calendar className="w-6 h-6 text-[#7C5A29] mb-4" />
               <h3 className="font-semibold font-display text-[#3D1A22] text-[16px] mb-2">Exact Muhurat</h3>
-              <p className="text-[14px] text-[#5C4D50] leading-snug">Panchang calculations aligned to family Gotra.</p>
+              <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-[#5C4D50]">Panchang calculations aligned to family Gotra.</p>
             </div>
             <div className="border border-[#EBDDD5] rounded-[24px] p-6 bg-white/40 hover:bg-white transition-colors duration-300">
               <Leaf className="w-6 h-6 text-[#7C5A29] mb-4" />
               <h3 className="font-semibold font-display text-[#3D1A22] text-[16px] mb-2">100% Shuddh Samagri</h3>
-              <p className="text-[14px] text-[#5C4D50] leading-snug">Organic wood, desi ghee, and pure herb ahutis.</p>
+              <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-[#5C4D50]">Organic wood, desi ghee, and pure herb ahutis.</p>
             </div>
             <div className="border border-[#EBDDD5] rounded-[24px] p-6 bg-white/40 hover:bg-white transition-colors duration-300">
               <Languages className="w-6 h-6 text-[#7C5A29] mb-4" />
               <h3 className="font-semibold font-display text-[#3D1A22] text-[16px] mb-2">Meaning Explained</h3>
-              <p className="text-[14px] text-[#5C4D50] leading-snug">Sacred slokas translated clearly to all participants.</p>
+              <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-[#5C4D50]">Sacred slokas translated clearly to all participants.</p>
             </div>
           </div>
 

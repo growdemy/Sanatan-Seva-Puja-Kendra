@@ -61,7 +61,7 @@ export default function CombinedSections() {
             <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
               Vedic Inquiries & Booking Clarifications
             </h2>
-            <p className="text-text-secondary">
+            <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary">
               Everything you need to know about Samagri arrangements, Shubh Muhurat, and home visits.
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function CombinedSections() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="px-5 pb-5 pt-0 text-sm text-text-secondary leading-relaxed border-t border-brand-gold-base/10 mt-2">
+                      <div className="px-5 pb-5 pt-0 text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary border-t border-brand-gold-base/10 mt-2">
                         {faq.a}
                       </div>
                     </motion.div>
@@ -116,7 +116,7 @@ export default function CombinedSections() {
             Ready to Bless Your Home with Vedic Auspiciousness?
           </h2>
           
-          <p className="text-lg text-surface-canvas/70 mb-10 max-w-2xl mx-auto">
+          <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-surface-canvas/70 mb-10 max-w-2xl mx-auto">
             Speak directly with Pandit Shridhar Shastri Ji today. Share your family Gotra and occasion for complimentary Muhurat calculation.
           </p>
           

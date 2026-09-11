@@ -19,14 +19,14 @@ export default function Hero() {
       
       {/* Animated Light Gradient Background */}
       <motion.div 
-        className="fixed md:absolute inset-0 z-0 bg-[linear-gradient(45deg,#FDF6F4,#FFF8F6,#FDF6F4,#FFF8F6)]"
+        className="absolute inset-0 z-0 bg-[linear-gradient(45deg,#FDF6F4,#FFF8F6,#FDF6F4,#FFF8F6)]"
         style={{ backgroundSize: '400% 400%' }}
         animate={{ backgroundPosition: ['0% 0%', '100% 100%', '0% 0%'] }}
         transition={{ duration: 20, ease: "linear", repeat: Infinity }}
       />
 
       {/* Moving Flares */}
-      <div className="fixed md:absolute inset-0 z-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {flares.map((flare, i) => (
           <motion.div
             key={`flare-${i}`}
@@ -55,7 +55,7 @@ export default function Hero() {
       </div>
       
       {/* Animated Mandala Background */}
-      <div className="fixed md:absolute inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden">
         <motion.svg 
           animate={{ rotate: 360 }}
           transition={{ duration: 120, repeat: Infinity, ease: "linear" }}

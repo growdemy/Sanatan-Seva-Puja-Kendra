@@ -24,7 +24,7 @@ export default function ServiceAreas() {
             <h2 className="text-[40px] md:text-[54px] leading-tight font-display text-[#3D1A22] mb-3 font-bold">
               Now in your city
             </h2>
-            <p className="text-[17px] text-[#5C4D50] leading-relaxed">
+            <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-[#5C4D50]">
               Our pandits are stationed across the city for quick, same-day availability.
             </p>
           </div>

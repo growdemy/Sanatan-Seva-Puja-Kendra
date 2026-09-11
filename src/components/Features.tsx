@@ -41,11 +41,11 @@ export default function Features() {
           WHY CHOOSE US
         </div>
         
-        <h2 className="text-[32px] md:text-[44px] font-display text-brand-primary-deep mb-[10px] font-bold">
+        <h2 className="text-[30px] md:text-[44px] font-display text-brand-primary-deep mb-[10px] font-bold">
           Why Families Choose Sanatan Seva Puja Kendra
         </h2>
         
-        <p className="text-[17px] text-text-secondary max-w-3xl mx-auto mb-[40px] leading-relaxed">
+        <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary max-w-3xl mx-auto mb-[40px]">
           Authentic Vedic rituals performed with genuine devotion, pure samagri, and complete peace of mind for your home and family.
         </p>
 
@@ -83,7 +83,7 @@ export default function Features() {
                       {feature.title}
                     </h3>
                   </div>
-                  <p className="text-[15px] text-text-secondary leading-relaxed">
+                  <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary">
                     {feature.description}
                   </p>
                 </div>

@@ -16,7 +16,7 @@ export default function Footer() {
                 <p className="text-[10px] text-brand-gold-base uppercase tracking-widest mt-0.5">VEDIC TAPASYA & SHASTRA VIDYA</p>
               </div>
             </div>
-            <p className="text-sm text-surface-canvas/70 leading-relaxed mb-6 font-sans">
+            <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-surface-canvas/70 mb-6 font-sans">
               Under the guidance of Pandit Shridhar Shastri Ji, preserving eternal Sanatana Dharma with authentic Sanskrit intonation, unadulterated samagri, and deep spiritual integrity.
             </p>
             <div className="flex gap-3">

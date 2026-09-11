@@ -50,7 +50,7 @@ export default function Steps() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-surface-canvas mb-4">
             How to Book Pandit Ji in 4 Simple Steps
           </h2>
-          <p className="text-surface-canvas/70 max-w-2xl mx-auto">
+          <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-surface-canvas/70 max-w-2xl mx-auto">
             From selecting your sacred puja to welcoming Pandit Ji with complete samagri at your doorstep, experience an effortless spiritual journey.
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function Steps() {
                 <span className="text-4xl font-display text-white/5 font-bold tracking-tighter">{step.num}</span>
               </div>
               <h3 className="text-xl font-display font-semibold text-surface-canvas mb-3">{step.title}</h3>
-              <p className="text-sm text-surface-canvas/60 leading-relaxed mb-6 h-20">{step.desc}</p>
+              <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-surface-canvas/60 mb-6 lg:min-h-[80px]">{step.desc}</p>
               <div className="inline-flex items-center gap-2 text-[10px] uppercase tracking-wider font-semibold text-brand-gold-base/80 border border-brand-gold-base/20 px-3 py-1.5 rounded bg-[#400A15]/50">
                 <span className="w-1 h-1 rounded-full bg-brand-gold-base"></span>
                 {step.tag}
@@ -101,7 +101,7 @@ export default function Steps() {
             </div>
             <div>
               <p className="text-surface-canvas font-semibold">Need Assistance with Booking or Muhurat Calculation?</p>
-              <p className="text-sm text-surface-canvas/60 mt-1">Our Vedic coordinators are available daily 8:00 AM - 8:00 PM IST.</p>
+              <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-surface-canvas/60 mt-1">Our Vedic coordinators are available daily 8:00 AM - 8:00 PM IST.</p>
             </div>
           </div>
           <button className="whitespace-nowrap bg-brand-gold-light hover:bg-brand-gold-base text-[#2A1115] font-semibold px-6 py-3 rounded transition-colors text-sm uppercase tracking-wider">

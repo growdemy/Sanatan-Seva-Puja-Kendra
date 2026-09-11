@@ -1,8 +1,8 @@
-import { MessageSquare, BookOpen } from 'lucide-react';
+import { MessageSquare, Phone } from 'lucide-react';
 
 export default function Navbar() {
   return (
-    <header className="w-full border-b border-[#5c1c2b] bg-[#46111D] sticky top-0 z-50 shadow-md">
+    <header className="w-full border-b border-[#5c1c2b] bg-[#46111D] sticky top-0 z-50 shadow-md overflow-hidden">
       <div className="max-w-[1600px] mx-auto py-4 px-6 md:px-10 lg:px-20 flex items-center justify-between">
         {/* Logo Area */}
       <div className="flex items-center gap-3">
@@ -31,10 +31,29 @@ export default function Navbar() {
             <MessageSquare className="w-5 h-5" />
           </button>
         </div>
-        <button className="bg-[#E8C37D] hover:bg-[#d4ad65] text-[#46111D] px-5 py-2.5 rounded flex items-center gap-2 transition-all font-semibold shadow-sm">
-          <BookOpen className="w-4 h-4" />
-          <span className="text-sm font-semibold">Book<br/><span className="text-xs font-normal opacity-90">Sankalpa</span></span>
-        </button>
+
+        {/* Mobile Call Button with Concentric Ripple / Zoom-out Flicker */}
+        <div className="relative flex items-center justify-center md:hidden">
+          <span className="absolute w-12 h-12 rounded-full bg-[#00A859]/30 animate-ping" style={{ animationDuration: '2s' }}></span>
+          <span className="absolute w-16 h-16 rounded-full bg-[#00A859]/20 animate-pulse" style={{ animationDuration: '1.5s' }}></span>
+          <a 
+            href="tel:+918309054729"
+            className="relative z-10 flex items-center justify-center bg-[#00A859] text-white w-10 h-10 rounded-full shadow-md"
+            title="Call +91 83090 54729"
+          >
+            <Phone className="w-4 h-4 text-white" />
+          </a>
+        </div>
+
+        {/* Desktop Call Button */}
+        <a 
+          href="tel:+918309054729"
+          className="hidden md:flex items-center justify-center bg-[#00A859] hover:bg-[#00914c] text-white px-4 py-2.5 rounded-lg gap-2 transition-all shadow-md group"
+          title="Call +91 83090 54729"
+        >
+          <Phone className="w-4 h-4 text-white" />
+          <span className="text-sm font-semibold tracking-wide">+91 83090 54729</span>
+        </a>
       </div>
       </div>
     </header>
