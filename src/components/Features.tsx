@@ -7,26 +7,26 @@ export default function Features() {
 
   const features = [
     {
-      icon: <Award className="w-7 h-7 text-[#3B0918]" />,
-      bg: "bg-[#EAE4E4]",
+      icon: <Award className="w-7 h-7 text-[#46111D]" />,
+      bg: "bg-[#FEEBD2]",
       title: "27+ Years Tapasya",
       description: "Gurukul-trained Acharya of Sampurnanand Sanskrit Vishwavidyalaya."
     },
     {
-      icon: <Flame className="w-7 h-7 text-[#5C4119]" />,
-      bg: "bg-[#EAE3D3]",
+      icon: <Flame className="w-7 h-7 text-[#78550E]" />,
+      bg: "bg-[#FEEBD2]",
       title: "Sacred Vedic Havans",
       description: "Pure cow ghee, herbs, dried mango woods, and authentic swaras."
     },
     {
-      icon: <UserCog className="w-7 h-7 text-[#6B4D21]" />,
-      bg: "bg-[#F7E8D8]",
+      icon: <UserCog className="w-7 h-7 text-[#46111D]" />,
+      bg: "bg-[#FEEBD2]",
       title: "1000+ Blessed Families",
       description: "Personalized Gotra Sankalpa, Nakshatra analysis, and Vedic advice."
     },
     {
-      icon: <MapPinHouse className="w-7 h-7 text-[#0B5D39]" />,
-      bg: "bg-[#E1EFE6]",
+      icon: <MapPinHouse className="w-7 h-7 text-[#78550E]" />,
+      bg: "bg-[#FEEBD2]",
       title: "Doorstep & Global E-Puja",
       description: "Full temple setup at your residence or direct live broadcast from Kashi."
     }

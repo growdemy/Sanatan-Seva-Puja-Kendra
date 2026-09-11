@@ -110,20 +110,30 @@ export default function Hero() {
           </p>
 
           {/* Stats Row */}
-          <div className="flex flex-col sm:flex-row gap-5 mb-10">
-            <div className="bg-white rounded-[24px] p-6 flex-1 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_24px_-8px_rgba(0,0,0,0.08)] border border-brand-gold-base/10 transition-all duration-300 hover:-translate-y-1">
-              <p className="text-[28px] font-display font-bold text-brand-primary-deep mb-1.5 leading-none">27<span className="text-brand-gold-base font-medium text-2xl">+</span> Years</p>
-              <p className="text-xs text-text-secondary leading-snug font-medium">Vedic Tapasya & Shastra<br/>Vidya</p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mb-8 text-sm text-[#3D1A22] font-semibold">
+            <div className="flex items-center gap-2">
+              <span className="text-base">⭐</span>
+              <span>4.9/5 Rating</span>
             </div>
-            <div className="bg-white rounded-[24px] p-6 flex-1 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_24px_-8px_rgba(0,0,0,0.08)] border border-brand-gold-base/10 transition-all duration-300 hover:-translate-y-1">
-              <p className="text-[28px] font-display font-bold text-brand-primary-deep mb-1.5 leading-none">1000<span className="text-brand-gold-base font-medium text-2xl">+</span></p>
-              <p className="text-xs text-text-secondary leading-snug font-medium">Devotee Families Blessed</p>
+            <div className="w-[1px] h-4 bg-[#E8C37D]/60 hidden sm:block" />
+            <div className="flex items-center gap-2">
+              <span className="text-base">🙏</span>
+              <span>15,000+ Happy Families</span>
             </div>
-            <div className="bg-white rounded-[24px] p-6 flex-1 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_24px_-8px_rgba(0,0,0,0.08)] border border-brand-gold-base/10 transition-all duration-300 hover:-translate-y-1">
-              <p className="flex items-center gap-2 text-[28px] font-display font-bold text-brand-primary-deep mb-1.5 leading-none">
-                <Star className="w-5 h-5 fill-brand-gold-base text-brand-gold-base" /> 4.98
-              </p>
-              <p className="text-xs text-text-secondary leading-snug font-medium">Shastra Purity Rating</p>
+            <div className="w-[1px] h-4 bg-[#E8C37D]/60 hidden sm:block" />
+            <div className="flex items-center gap-2">
+              <span className="text-base">📅</span>
+              <span>20+ Years Experience</span>
+            </div>
+            <div className="w-[1px] h-4 bg-[#E8C37D]/60 hidden sm:block" />
+            <div className="flex items-center gap-2">
+              <span className="text-base">✅</span>
+              <span>30+ Verified Pandits</span>
+            </div>
+            <div className="w-[1px] h-4 bg-[#E8C37D]/60 hidden sm:block" />
+            <div className="flex items-center gap-2">
+              <span className="text-base">🎁</span>
+              <span>Samagri Included</span>
             </div>
           </div>
 
