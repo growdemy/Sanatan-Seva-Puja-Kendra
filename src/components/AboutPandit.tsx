@@ -56,7 +56,7 @@ export default function AboutPandit() {
             ABOUT PANDIT SHRIDHAR SHASTRI JI
           </div>
           
-          <h2 className="text-[36px] md:text-[44px] lg:text-[52px] leading-[1.1] font-display text-[#3D1A22] font-bold mb-8">
+          <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display text-[#3D1A22] font-bold mb-8">
             A Quarter Century of Vedic Scholarship & <span className="text-[#8B7330] italic font-bold">Pure Devotion</span>
           </h2>
           

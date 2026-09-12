@@ -40,7 +40,7 @@ export default function Testimonials() {
           VERIFIED YAJMAN REVIEWS
           <span className="w-6 h-px bg-brand-gold-base/50"></span>
         </div>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-text-primary mb-4 font-bold">
+        <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display text-text-primary mb-4 font-bold">
           1000+ Families Blessed
         </h2>
         <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary max-w-2xl mx-auto">

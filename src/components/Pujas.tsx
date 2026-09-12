@@ -56,7 +56,7 @@ export default function Pujas() {
             <div className="inline-block bg-[#3B201A] border border-[#523326] text-[#E8C37D] px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest mb-4">
               SACRED CATALOGUE
             </div>
-            <h2 className="text-[32px] md:text-[40px] lg:text-[44px] font-display font-bold text-[#F9F6F6] mb-3">
+            <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display font-bold text-[#F9F6F6] mb-3">
               Popular Pujas & Anushthans
             </h2>
             <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-[#C2B5B7] max-w-2xl">

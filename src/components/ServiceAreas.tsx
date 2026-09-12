@@ -21,7 +21,7 @@ export default function ServiceAreas() {
             <div className="inline-flex items-center gap-2 bg-[#FEEBD2] text-[#78550E] text-[11px] font-bold uppercase tracking-widest px-4 py-2 rounded-[50px] mb-6 shadow-none">
               SERVING EVERYWHERE
             </div>
-            <h2 className="text-[40px] md:text-[54px] leading-tight font-display text-[#3D1A22] mb-3 font-bold">
+            <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display text-[#3D1A22] mb-3 font-bold">
               Now in your city
             </h2>
             <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-[#5C4D50]">

@@ -58,7 +58,7 @@ export default function CombinedSections() {
             <div className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-widest text-brand-gold-deep mb-4">
               FREQUENTLY ANSWERED
             </div>
-            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display text-text-primary mb-4 font-bold">
               Vedic Inquiries & Booking Clarifications
             </h2>
             <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary">
@@ -112,7 +112,7 @@ export default function CombinedSections() {
             SANATAN SEVA PUJA KENDRA
           </div>
           
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-display text-surface-canvas mb-6 leading-tight">
+          <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display text-surface-canvas mb-6 font-bold">
             Ready to Bless Your Home with Vedic Auspiciousness?
           </h2>
           

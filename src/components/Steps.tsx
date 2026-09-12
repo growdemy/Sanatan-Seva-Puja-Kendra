@@ -47,7 +47,7 @@ export default function Steps() {
             SIMPLE 4-STEP PROCESS
             <span className="w-2 h-2 rotate-45 bg-brand-gold-base"></span>
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-surface-canvas mb-4">
+          <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display text-surface-canvas mb-4">
             How to Book Pandit Ji in 4 Simple Steps
           </h2>
           <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-surface-canvas/70 max-w-2xl mx-auto">
