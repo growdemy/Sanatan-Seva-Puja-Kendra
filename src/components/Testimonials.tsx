@@ -6,39 +6,47 @@ export default function Testimonials() {
     {
       text: "We booked Pandit Shridhar Shastri Ji for our villa's Griha Pravesh in DLF Gurugram. The purity with which he chanted Vastu slokas and explained the importance of each offering gave our family incredible peace.",
       name: "Rajesh & Sunita Mehra",
-      loc: "Gurugram • Griha Pravesh"
+      loc: "Gurugram",
+      puja: "Griha Pravesh Puja",
+      initials: "RM"
     },
     {
       text: "Pandit Shridhar Shastri Ji's Kundli reading was extraordinarily accurate. Rather than creating fear regarding Manglik dosha, he gave simple, authentic Vedic jaap that resolved obstacles quickly.",
       name: "Col. Arvind Sharma (Retd.)",
-      loc: "Noida • Kundli & Dosha Shanti"
+      loc: "Noida",
+      puja: "Dosha Shanti Puja",
+      initials: "AS"
     },
     {
       text: "Residing in London, we organized our son's Janeu Sanskar through Sanatan Seva Puja Kendra. Pandit Shridhar Ji guided the entire vidhi via Live broadcast and sent blessed prasad right on time.",
       name: "Dr. Priyadarshan Iyer",
-      loc: "London, UK • Janeu Sanskar"
+      loc: "London, UK",
+      puja: "Janeu Sanskar",
+      initials: "PI"
     },
     {
       text: "The Satyanarayan Katha performed at our home was deeply divine and peaceful. Every mantra was chanted with precise Vedic pronunciation.",
       name: "Ananya & Rohit Verma",
-      loc: "Hyderabad • Satyanarayan Puja"
+      loc: "Hyderabad",
+      puja: "Satyanarayan Puja",
+      initials: "AV"
     },
     {
       text: "Finding an authentic Sanskrit pandit for our Bhoomi Pujan in Mumbai was effortless. Highly professional and deeply knowledgeable.",
       name: "Vikram Singhania",
-      loc: "Mumbai • Bhoomi Pujan"
+      loc: "Mumbai",
+      puja: "Bhoomi Pujan",
+      initials: "VS"
     }
   ];
 
   const duplicatedReviews = [...reviews, ...reviews, ...reviews];
 
   return (
-    <section className="bg-surface-canvas py-20 lg:py-28 overflow-hidden">
+    <section className="bg-surface-canvas py-[50px] lg:py-[80px] overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10 lg:px-20 mb-16 text-center">
-        <div className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-widest text-brand-gold-deep mb-4">
-          <span className="w-6 h-px bg-brand-gold-base/50"></span>
+        <div className="inline-flex items-center gap-2 bg-[#FEEBD2] text-[#78550E] text-[11px] font-bold uppercase tracking-widest px-4 py-2 rounded-[50px] mb-4">
           VERIFIED YAJMAN REVIEWS
-          <span className="w-6 h-px bg-brand-gold-base/50"></span>
         </div>
         <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display text-text-primary mb-4 font-bold">
           1000+ Families Blessed
@@ -67,27 +75,36 @@ export default function Testimonials() {
           {duplicatedReviews.map((rev, i) => (
             <div 
               key={i} 
-              className="w-[360px] md:w-[420px] bg-white p-8 rounded-[24px] border border-brand-gold-base/20 shadow-sm flex flex-col justify-between shrink-0"
+              className="w-[360px] md:w-[420px] bg-white p-8 rounded-[16px] border border-[#EBDDD5] shadow-sm flex flex-col justify-between shrink-0"
             >
               <div>
-                <div className="flex gap-1 mb-6">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-12 h-12 rounded-full bg-[#45131E] text-white font-bold text-sm flex items-center justify-center shrink-0">
+                    {rev.initials}
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#3D1A22] text-base font-sans">{rev.name}</h4>
+                    <p className="text-sm text-[#78550E] flex items-center gap-1 mt-0.5 font-sans">
+                      <span>📍</span> {rev.loc}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="w-4 h-4 fill-brand-gold-base text-brand-gold-base" />
+                    <Star key={j} className="w-4 h-4 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
-                <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary mb-8 italic">
-                  "{rev.text}"
+
+                <p className="text-[15px] leading-[24px] text-[#3D1A22] mb-8 font-sans">
+                  {rev.text}
                 </p>
               </div>
               
-              <div className="flex items-center justify-between pt-6 border-t border-brand-gold-base/10">
-                <div>
-                  <h4 className="font-semibold text-text-primary text-sm">{rev.name}</h4>
-                  <p className="text-xs text-text-secondary mt-0.5">{rev.loc}</p>
-                </div>
-                <div className="bg-emerald-50 text-emerald-700 text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full border border-emerald-200">
-                  Verified
-                </div>
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#FF6B00] font-sans">
+                  {rev.puja}
+                </span>
               </div>
             </div>
           ))}

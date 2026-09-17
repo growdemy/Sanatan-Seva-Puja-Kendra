@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export default function AboutPandit() {
   return (
-    <section className="bg-[#FDF9F7] py-20 lg:py-28 overflow-hidden">
+    <section className="bg-[#FDF9F7] py-[50px] lg:py-[80px] overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10 lg:px-20 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
         {/* Left Image Column */}

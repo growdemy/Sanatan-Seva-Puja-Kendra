@@ -58,7 +58,7 @@ export default function Features() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-b from-[#FDF6F4] to-[#FFF8F6] py-[50px] border-t border-brand-gold-base/10 overflow-hidden">
+    <section className="bg-gradient-to-b from-[#FDF6F4] to-[#FFF8F6] py-[50px] lg:py-[80px] border-t border-brand-gold-base/10 overflow-hidden">
       <div className="max-w-[1600px] mx-auto px-6 md:px-10 lg:px-20 text-center">
         
         <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-[#78550E] mb-6 bg-[#FEEBD2] px-4 py-2 rounded-[50px] shadow-none">

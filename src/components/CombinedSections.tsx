@@ -1,4 +1,4 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Calendar, MessageSquare } from 'lucide-react';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -34,7 +34,7 @@ export default function CombinedSections() {
   return (
     <>
       {/* Stats Strip */}
-      <section className="bg-[#2A1115] py-16 border-y border-brand-gold-base/20 relative overflow-hidden">
+      <section className="bg-[#2A1115] py-[50px] lg:py-[80px] border-y border-brand-gold-base/20 relative overflow-hidden">
         {/* Faint mandala background */}
         <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, #C59A4E 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
         
@@ -51,11 +51,11 @@ export default function CombinedSections() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-surface-canvas py-20 lg:py-28">
+      <section className="bg-surface-canvas py-[50px] lg:py-[80px]">
         <div className="max-w-3xl mx-auto px-6 md:px-10">
           
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-widest text-brand-gold-deep mb-4">
+            <div className="inline-flex items-center gap-2 bg-[#FEEBD2] text-[#78550E] text-[11px] font-bold uppercase tracking-widest px-4 py-2 rounded-[50px] mb-4">
               FREQUENTLY ANSWERED
             </div>
             <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display text-text-primary mb-4 font-bold">
@@ -74,7 +74,7 @@ export default function CombinedSections() {
                 className="bg-white border border-brand-gold-base/20 rounded-lg overflow-hidden cursor-pointer hover:border-brand-gold-base/50 transition-colors shadow-sm"
               >
                 <div className="p-5 flex items-center justify-between">
-                  <h3 className="font-semibold text-text-primary text-sm pr-8">{faq.q}</h3>
+                  <h3 className="font-semibold text-text-primary text-sm pr-8 font-sans">{faq.q}</h3>
                   <motion.div
                     animate={{ rotate: openFaq === i ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
@@ -90,7 +90,7 @@ export default function CombinedSections() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="px-5 pb-5 pt-0 text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary border-t border-brand-gold-base/10 mt-2">
+                      <div className="px-5 pb-5 pt-0 text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-text-secondary border-t border-brand-gold-base/10 mt-2 font-sans">
                         {faq.a}
                       </div>
                     </motion.div>
@@ -100,39 +100,6 @@ export default function CombinedSections() {
             ))}
           </div>
           
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-[#2A1115] py-24 relative overflow-hidden text-center">
-        <div className="max-w-4xl mx-auto px-6 md:px-10 relative z-10">
-          
-          <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-brand-gold-base mb-6 border border-brand-gold-base/30 px-4 py-1.5 rounded-full bg-[#400A15]">
-            <span className="text-sm">ॐ</span>
-            SANATAN SEVA PUJA KENDRA
-          </div>
-          
-          <h2 className="text-[30px] leading-[38px] md:text-[44px] md:leading-[58px] font-display text-surface-canvas mb-6 font-bold">
-            Ready to Bless Your Home with Vedic Auspiciousness?
-          </h2>
-          
-          <p className="text-[14px] leading-[23px] md:text-[16px] md:leading-[27px] text-surface-canvas/70 mb-10 max-w-2xl mx-auto">
-            Speak directly with Pandit Shridhar Shastri Ji today. Share your family Gotra and occasion for complimentary Muhurat calculation.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <button className="w-full sm:w-auto bg-brand-gold-deep hover:bg-brand-gold-base text-surface-canvas px-8 py-4 rounded font-semibold transition-colors flex items-center justify-center gap-2">
-              <span className="text-lg">📅</span> BOOK PUJA ONLINE
-            </button>
-            <button className="w-full sm:w-auto bg-white hover:bg-surface-parchment text-[#2A1115] px-8 py-4 rounded font-semibold transition-colors flex items-center justify-center gap-2">
-              <span className="text-green-600 text-lg">💬</span> WHATSAPP PANDIT JI
-            </button>
-          </div>
-          
-          <p className="text-xs text-surface-canvas/50">
-            Direct Helpdesk: <span className="text-brand-gold-base">+91 98234 56789</span> • 8:00 AM - 8:00 PM IST
-          </p>
-
         </div>
       </section>
     </>

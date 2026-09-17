@@ -214,7 +214,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <button type="button" className="w-full bg-gradient-to-r from-[#E5C378] via-[#F2D696] to-[#E5C378] hover:from-[#D1AC5D] hover:via-[#E8C37D] hover:to-[#D1AC5D] text-[#3B0918] font-bold py-[12px] rounded-xl flex items-center justify-center gap-2 transition-all duration-300 mt-4 text-[15px] shadow-[0_4px_14px_rgba(229,195,120,0.3)] hover:shadow-[0_6px_20px_rgba(229,195,120,0.4)]">
+              <button type="button" className="w-full bg-gradient-to-r from-[#FF6B00] to-[#FF8C00] hover:from-[#E66000] hover:to-[#E67E00] text-white font-bold py-[12px] rounded-xl flex items-center justify-center gap-2 transition-all duration-300 mt-4 text-[15px] shadow-[0_4px_20px_rgba(255,107,0,0.3)]">
                 <span className="text-lg drop-shadow-sm">🙏</span> Get Free Consultation
               </button>
             </form>
