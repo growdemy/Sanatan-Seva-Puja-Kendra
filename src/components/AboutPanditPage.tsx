@@ -1,11 +1,7 @@
-import { ArrowLeft, BookOpen, Star, Mic, Sparkles, Camera } from 'lucide-react';
+import { BookOpen, Star, Mic, Sparkles, Camera } from 'lucide-react';
 import AboutPandit from './AboutPandit';
 
-interface AboutPanditPageProps {
-  onBack: () => void;
-}
-
-export default function AboutPanditPage({ onBack }: AboutPanditPageProps) {
+export default function AboutPanditPage() {
   const stats = [
     {
       num: "27+",
@@ -28,17 +24,6 @@ export default function AboutPanditPage({ onBack }: AboutPanditPageProps) {
   return (
     <div className="min-h-screen bg-[#FDF9F7]">
       
-      {/* Navigation breadcrumb bar */}
-      <div className="bg-[#46111D] text-white py-3 px-6 md:px-10 lg:px-20 flex items-center justify-between">
-        <button 
-          onClick={onBack}
-          className="inline-flex items-center gap-2 text-[#E8C37D] hover:text-white transition-colors text-sm font-semibold uppercase tracking-wider"
-        >
-          <ArrowLeft className="w-4 h-4" /> Back to Home
-        </button>
-        <span className="text-xs text-white/70 uppercase tracking-widest hidden sm:inline">Sanatan Seva Puja Kendra • Acharya Profile</span>
-      </div>
-
       {/* Hero section is AboutPandit */}
       <AboutPandit />
 

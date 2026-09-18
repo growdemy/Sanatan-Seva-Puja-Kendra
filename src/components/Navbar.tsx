@@ -2,9 +2,20 @@ import { useState } from 'react';
 import { MessageSquare, ChevronDown, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
+export type PageType = 
+  | 'home' 
+  | 'about-pandit-page' 
+  | 'vedic-pujas-page'
+  | 'anushthans-jaap-page'
+  | 'marriage-family-page'
+  | 'health-wellbeing-page'
+  | 'wealth-career-page'
+  | 'peace-protection-page'
+  | 'home-vastu-page';
+
 interface NavbarProps {
-  currentPage: 'home' | 'about-pandit-page';
-  onNavigate: (page: 'home' | 'about-pandit-page') => void;
+  currentPage: PageType;
+  onNavigate: (page: PageType) => void;
 }
 
 export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
@@ -21,6 +32,34 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
     { name: "Peace, Protection & Dosha Shanti", count: 4 },
     { name: "Home & Vastu", count: 4 }
   ];
+
+  const categoryPageMap: Record<string, PageType> = {
+    "Vedic Pujas": "vedic-pujas-page",
+    "Anushthans & Jaap": "anushthans-jaap-page",
+    "Marriage & Family": "marriage-family-page",
+    "Health & Well-being": "health-wellbeing-page",
+    "Wealth, Career & Business": "wealth-career-page",
+    "Peace, Protection & Dosha Shanti": "peace-protection-page",
+    "Home & Vastu": "home-vastu-page"
+  };
+
+  const isCataloguePage = [
+    'vedic-pujas-page',
+    'anushthans-jaap-page',
+    'marriage-family-page',
+    'health-wellbeing-page',
+    'wealth-career-page',
+    'peace-protection-page',
+    'home-vastu-page'
+  ].includes(currentPage);
+
+  const handleCategoryClick = (catName: string) => {
+    const target = categoryPageMap[catName] || 'home';
+    onNavigate(target);
+    setShowDropdown(false);
+    setMobileMenuOpen(false);
+    setMobileCatalogueOpen(false);
+  };
 
   return (
     <header className="w-full border-b border-[#5c1c2b] bg-[#46111D] sticky top-0 z-50 shadow-md">
@@ -56,13 +95,12 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >
-            <a 
-              href="#pujas" 
-              onClick={() => onNavigate('home')} 
-              className="text-sm font-semibold text-white/70 hover:text-white transition-colors inline-flex items-center gap-1"
+            <button 
+              onClick={() => onNavigate('vedic-pujas-page')} 
+              className={`text-sm font-semibold transition-colors inline-flex items-center gap-1 ${isCataloguePage ? 'text-white border-b-2 border-[#E8C37D]' : 'text-white/70 hover:text-white'}`}
             >
               Pujas & Anushthans <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${showDropdown ? 'rotate-180' : ''}`} />
-            </a>
+            </button>
 
             {showDropdown && (
               <div className="absolute top-full left-0 w-72 bg-[#3B121B] border border-[#5C1E2B] rounded-xl shadow-2xl py-3 px-2 z-50 mt-1 animate-fadeIn">
@@ -70,20 +108,16 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
                   <span className="text-[11px] font-bold text-[#E8C37D] uppercase tracking-wider">Sacred Catalogue</span>
                 </div>
                 {pujaCategories.map((cat, i) => (
-                  <a 
+                  <button 
                     key={i}
-                    href="#pujas"
-                    onClick={() => {
-                      onNavigate('home');
-                      setShowDropdown(false);
-                    }}
-                    className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm text-white/90 hover:bg-[#4E1823] hover:text-[#E8C37D] transition-colors"
+                    onClick={() => handleCategoryClick(cat.name)}
+                    className={`w-full text-left flex items-center justify-between px-3 py-2.5 rounded-lg text-sm transition-colors ${categoryPageMap[cat.name] === currentPage ? 'bg-[#4E1823] text-[#E8C37D]' : 'text-white/90 hover:bg-[#4E1823] hover:text-[#E8C37D]'}`}
                   >
                     <span>{cat.name}</span>
                     <span className="text-xs bg-[#2E161B] text-[#E8C37D] border border-[#523326] px-2 py-0.5 rounded-full font-semibold">
                       {cat.count}
                     </span>
-                  </a>
+                  </button>
                 ))}
               </div>
             )}
@@ -186,21 +220,16 @@ export default function Navbar({ currentPage, onNavigate }: NavbarProps) {
                       className="pl-2 space-y-1 overflow-hidden pt-1"
                     >
                       {pujaCategories.map((cat, i) => (
-                        <a 
+                        <button 
                           key={i}
-                          href="#pujas"
-                          onClick={() => {
-                            onNavigate('home');
-                            setMobileMenuOpen(false);
-                            setMobileCatalogueOpen(false);
-                          }}
-                          className="flex items-center justify-between px-3 py-2 rounded-lg text-sm text-white/90 hover:bg-[#4E1823] hover:text-[#E8C37D] transition-colors"
+                          onClick={() => handleCategoryClick(cat.name)}
+                          className={`w-full text-left flex items-center justify-between px-3 py-2 rounded-lg text-sm transition-colors ${categoryPageMap[cat.name] === currentPage ? 'bg-[#4E1823] text-[#E8C37D]' : 'text-white/90 hover:bg-[#4E1823] hover:text-[#E8C37D]'}`}
                         >
                           <span>{cat.name}</span>
                           <span className="text-xs bg-[#2E161B] text-[#E8C37D] border border-[#523326] px-2 py-0.5 rounded-full font-semibold">
                             {cat.count}
                           </span>
-                        </a>
+                        </button>
                       ))}
                     </motion.div>
                   )}
